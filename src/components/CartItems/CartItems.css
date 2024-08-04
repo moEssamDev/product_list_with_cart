@@ -1,0 +1,121 @@
+.cart-items {
+    min-width: 400px;
+    background: hsl(20, 50%, 98%);
+    padding: 20px;
+    border-radius: 15px;
+}
+@media (max-width: 1000px) {
+    .cart-items {
+        min-width: 100%;
+    }
+}
+.cart-items h2 {
+    color: hsl(14, 86%, 42%);
+}
+.empty-cart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px 0;
+}
+.empty-cart-text {
+    color: hsl(7, 20%, 60%);
+    font-size: 14px;
+    font-weight: 600; 
+}
+.cart-items-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cart-item-info .item-name {
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.cart-item-info div {
+    display: flex;
+    gap: 10px;
+    font-size: 15px;
+}
+.cart-item-info .quantity {
+    color: hsl(14, 86%, 42%);
+    font-weight: 500;
+}
+.cart-item-info .price {
+    color: hsl(7, 20%, 60%);
+    font-weight: 500;
+}
+.cart-item-info .total {
+    color: hsl(12, 20%, 44%);
+    font-weight: 500;
+}
+.cart-items-item .remove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid hsl(14, 25%, 72%) !important;
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    line-height: 20px;
+    width: 20px;
+    color: hsl(14, 25%, 72%);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.cart-items-item .remove:hover {
+    transform: scale(1.05);
+    border-color: black !important;
+    color: black;
+}
+.cart-items hr {
+    height: 1px;
+    margin: 15px 0;
+    background: hsl(13, 31%, 94%);
+    border: none;
+}
+
+.order-total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 18px 0;
+}
+.order-total p {
+    color: hsl(14, 65%, 9%);
+}
+.order-total h2 {
+    color: hsl(14, 65%, 9%);
+    font-size: 27px;
+}
+
+.carbon-neutral {
+    background: hsl(13, 31%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 14px 0;
+    border-radius: 6px;
+}
+.carbon-neutral p {
+    font-size: 15px;
+    font-weight: 400;
+}
+.carbon-neutral p span {
+    font-weight: 500;
+}
+
+.confirm-button {
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    background: hsl(14, 86%, 42%);
+    color: white;
+    cursor: pointer;
+}

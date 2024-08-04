@@ -1,0 +1,109 @@
+.confirm-order {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    min-width: 450px;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+@media (max-width: 750px) {
+    .confirm-order {
+        min-width: 90%;
+    }
+}
+.confirm-order .confirmed {
+    width: 35px;
+}
+.confirm-order h2 {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.confirm-order p {
+    color: hsl(7, 20%, 60%);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.confirm-items {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    background: hsl(20, 50%, 98%);
+    border-radius: 8px;
+    padding: 15px;
+}
+.confirm-items .confirm-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.confirm-item .item-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item-info img {
+    width: 40px;
+    border-radius: 4px;
+}
+.item-info .item-name {
+    font-size: 10px;
+    font-weight: 500;
+}
+.item-info .item-info-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.item-info .item-info-text div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item-info .item-info-text .quantity {
+    color: hsl(14, 86%, 42%);
+}
+hr {
+    height: 1px;
+    margin: 10px 0;
+    background: hsl(13, 31%, 94%);
+    border: none;
+}
+.total-order-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.total-order-price p {
+    color: black;
+    font-weight: 400;
+}
+
+.confirm-order button {
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    background: hsl(14, 86%, 42%);
+    color: white;
+    cursor: pointer;
+}
+
+
+.back-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.582);
+    z-index: 2;
+}
